@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Twitka - Створити Пост</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Twitka</h1>
+            <nav>
+                <a href="index.html">Головна</a>
+                <a href="view_posts.php">Пости</a>
+                <a href="logout.php">Вийти</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Створити Новий Пост</h2>
+        <form action="post.php" method="POST" enctype="multipart/form-data">
+            <label for="content">Контент:</label>
+            <textarea id="content" name="content" rows="4" required></textarea>
+
+            <label for="media">Медіа (опціонально):</label>
+            <input type="file" id="media" name="media" accept="image/*,video/*">
+
+            <button type="submit">Опублікувати</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Twitka. Всі права захищені.</p>
+    </footer>
+</body>
+</html>

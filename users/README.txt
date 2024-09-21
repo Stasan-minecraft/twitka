@@ -1,0 +1,1 @@
+This folder contains individual .txt files for each user.
